@@ -165,7 +165,7 @@ class BookController extends Controller
 
         $user->favoriteBooks()->toggle($book->id);
 
-        return redirect()->route('books.show', $book);
+        return back();
     }
 
     /**
